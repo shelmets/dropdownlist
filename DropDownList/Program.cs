@@ -13,7 +13,7 @@ namespace DropDownList
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1(new SqlConn(), new Logic()));
+            Application.Run(new Form1(new SqlConn(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Pooling=False"), new Logic()));
         }
     }
 }

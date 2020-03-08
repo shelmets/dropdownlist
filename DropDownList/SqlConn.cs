@@ -16,8 +16,11 @@ namespace DropDownList
     }
     public class SqlConn:IStream
     {
-        string stringConn = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Pooling=False";
-                
+        string stringConn;
+        public SqlConn(string sConn)
+        {
+            stringConn = sConn;
+        }
         public IEnumerable<Tuple<string, int>> IterRowsUnivers()
         {
             string query = "SELECT name, 0 FROM universities UNION SELECT name, id_university FROM synonum";
