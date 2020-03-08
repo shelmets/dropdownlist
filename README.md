@@ -1,3 +1,2 @@
 # dropdownlist
-## Create the local database in VS
-## Run the script DropDownList/SQLQuery1 in VS to create full tables
+## Open the dump-script DropDownList/SQLQuery1.sql in VS, connect to (localdb)\MSSQLLocalDB, run file
